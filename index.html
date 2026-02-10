@@ -10,6 +10,7 @@
             color: green;
         }
 
+        /* these rules change all div tags on this page */
           div {
             font-weight: bold;
             font-size: 60px;
@@ -21,9 +22,23 @@
             font-weight: bold;
             font-size: 220px;
             letter-spacing: 12px;
+            /* negative margins decrease space between lines */
+            margin-top: -80px;
+            margin-bottom: -80px;
+        }
+
+        .offset {
+            /*Increases left margin to move elements to the right*/
+            margin-left: 30px;
+        }
+
+        .offset span {
+            display: inline-block;
+            transform: rotate(12deg);
         }
       
     </style>
+
 </head>
 <body>
     <div>Th</div>
@@ -36,6 +51,10 @@
     <div>ThThTh</div>
     <div>TTThhh!!!!</div>
     <div>Th!nk</div>
-    <h1>different</h1>
+    <h1 class="offset">
+        diff<span>e</span>r<span style="transform:rotate(-12deg);">e</span>nt
+    </h1>
+    <div class="offset">
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</div>
 </body>
 </html>
